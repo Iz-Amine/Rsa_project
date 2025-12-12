@@ -61,12 +61,12 @@ htmlcov/
 .DS_Store
 Thumbs.db
 
-# =========================
-# RSA / Crypto generated files (optionnel)
-# =========================
-*.pem
-*.key
-*.crt
-*.csr
-*.der
+# # =========================
+# # RSA / Crypto generated files (optionnel)
+# # =========================
+# *.pem
+# *.key
+# *.crt
+# *.csr
+# *.der
 
