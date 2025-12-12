@@ -1,4 +1,4 @@
-from .algo_base import *
+from algo_base import *
 
 
 # ==================== GÉNÉRATION DE CLÉS RSA ====================

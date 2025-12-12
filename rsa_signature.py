@@ -1,7 +1,7 @@
 import base64
 import hashlib
-from .algo_base import exponentiation_rapide
-from .cle_rsa import CleRSA
+from algo_base import exponentiation_rapide
+from cle_rsa import CleRSA
 
 class RSASignature:
     """

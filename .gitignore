@@ -1,0 +1,72 @@
+# =========================
+# Virtual environments
+# =========================
+venv/
+.env/
+.env.*/
+.venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# =========================
+# Python cache / bytecode
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# Distribution / packaging
+# =========================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# Logs & temp files
+# =========================
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# =========================
+# Unit test / coverage
+# =========================
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# IDE / Editors
+# =========================
+.vscode/
+.idea/
+*.iml
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# RSA / Crypto generated files (optionnel)
+# =========================
+*.pem
+*.key
+*.crt
+*.csr
+*.der
+

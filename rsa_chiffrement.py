@@ -1,7 +1,7 @@
 from typing import List
 import base64
-from .algo_base import exponentiation_rapide
-from .cle_rsa import CleRSA
+from algo_base import exponentiation_rapide
+from cle_rsa import CleRSA
 
 class RSAChiffrement:
     """

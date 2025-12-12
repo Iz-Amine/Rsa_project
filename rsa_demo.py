@@ -1,7 +1,7 @@
-from .algo_base import *
-from .cle_rsa import CleRSA
-from .rsa_chiffrement import RSAChiffrement
-from .rsa_signature import RSASignature
+from algo_base import *
+from cle_rsa import CleRSA
+from rsa_chiffrement import RSAChiffrement
+from rsa_signature import RSASignature
 
 # ==================== DÉMONSTRATION ====================
 
@@ -22,7 +22,7 @@ def demonstration_complete():
     print("-" * 70)
     chiffrement = RSAChiffrement(cle)
     
-    message_original = "Bonjour! Ceci est un message secret pour tester RSA avec des accents: é, à, ç. 🔐"
+    message_original = "Bonjour! Ceci est un message secret pour tester RSA avec des accents: e, a, c."
     print(f"Message original  : {message_original}")
     print()
     
@@ -41,7 +41,7 @@ def demonstration_complete():
     print("-" * 70)
     signature_rsa = RSASignature(cle)
     
-    message_a_signer = "Ce message doit être authentifié"
+    message_a_signer = "Ce message doit etre authentifie"
     print(f"Message à signer  : {message_a_signer}")
     
     signature = signature_rsa.signer_message(message_a_signer)
@@ -52,7 +52,7 @@ def demonstration_complete():
     print(f"Vérification      : {verification}")
     
     # Test avec message modifié
-    message_modifie = message_a_signer + " (modifié)"
+    message_modifie = message_a_signer + " (modifie)"
     verification_faux = signature_rsa.verifier_signature(message_modifie, signature)
     print(f"Vérif. (modifié)  : {verification_faux}")
     print()

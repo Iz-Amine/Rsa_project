@@ -94,7 +94,7 @@ def generer_nombre_premier(bits: int) -> int:
     """
     while True:
         n = random.getrandbits(bits)
-        n |= (1 << bits - 1) | 1  # S'assurer que le MSB et LSB sont à 1
+        n |= (1 << (bits - 1)) | 1  # S'assurer que le MSB et LSB sont à 1
         
         if test_miller_rabin(n):
             return n
